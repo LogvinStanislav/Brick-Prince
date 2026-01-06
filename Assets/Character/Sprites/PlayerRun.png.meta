@@ -1,96 +1,33 @@
 fileFormatVersion: 2
-guid: 225a1eacac9dc41ae9a4d6adf7df8d40
+guid: f0a8cb3493f137246bee93e08cfdcc0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: Unity_MC_render_run_0
+      213: -7870276711496609559
+    second: PlayerRun_0
   - first:
-      213: 21300002
-    second: Unity_MC_render_run_1
+      213: 1728719941392088379
+    second: PlayerRun_1
   - first:
-      213: 21300004
-    second: Unity_MC_render_run_2
+      213: 5511062410843008217
+    second: PlayerRun_2
   - first:
-      213: 21300006
-    second: Unity_MC_render_run_3
+      213: 1354115375237695471
+    second: PlayerRun_3
   - first:
-      213: 21300008
-    second: Unity_MC_render_run_4
+      213: -4522731149510019502
+    second: PlayerRun_4
   - first:
-      213: 21300010
-    second: Unity_MC_render_run_5
+      213: -3909304355900387050
+    second: PlayerRun_5
   - first:
-      213: 21300012
-    second: Unity_MC_render_run_6
+      213: -4608814311081262565
+    second: PlayerRun_6
   - first:
-      213: 21300014
-    second: Unity_MC_render_run_7
-  - first:
-      213: 21300016
-    second: Unity_MC_render_run_8
-  - first:
-      213: 21300018
-    second: Unity_MC_render_run_9
-  - first:
-      213: 21300020
-    second: Unity_MC_render_run_10
-  - first:
-      213: 21300022
-    second: Unity_MC_render_run_11
-  - first:
-      213: 21300024
-    second: Unity_MC_render_run_12
-  - first:
-      213: 21300026
-    second: Unity_MC_render_run_13
-  - first:
-      213: 21300028
-    second: Unity_MC_render_run_14
-  - first:
-      213: 21300030
-    second: Unity_MC_render_run_15
-  - first:
-      213: 21300032
-    second: Unity_MC_render_run_16
-  - first:
-      213: 21300034
-    second: Unity_MC_render_run_17
-  - first:
-      213: 21300036
-    second: Unity_MC_render_run_18
-  - first:
-      213: 21300038
-    second: Unity_MC_render_run_19
-  - first:
-      213: 21300040
-    second: Unity_MC_render_run_20
-  - first:
-      213: 21300042
-    second: Unity_MC_render_run_21
-  - first:
-      213: 21300044
-    second: Unity_MC_render_run_22
-  - first:
-      213: 21300046
-    second: Unity_MC_render_run_23
-  - first:
-      213: 21300048
-    second: Unity_MC_render_run_24
-  - first:
-      213: 21300050
-    second: Unity_MC_render_run_25
-  - first:
-      213: 21300052
-    second: Unity_MC_render_run_26
-  - first:
-      213: 21300054
-    second: Unity_MC_render_run_27
-  - first:
-      213: 21300056
-    second: Unity_MC_render_run_28
+      213: 2216087602722939322
+    second: PlayerRun_7
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -107,11 +44,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -131,10 +69,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,9 +87,11 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -161,9 +101,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -173,10 +114,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-  - serializedVersion: 3
-    buildTarget: WebGL
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -185,663 +127,212 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Unity_MC_render_run_0
+      name: PlayerRun_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 504
-        width: 128
-        height: 126
+        x: 57
+        y: 5
+        width: 41
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7379d3b9d156c45449ed8c82880836f6
-      internalID: 21300000
+      spriteID: 9e01737870927c290800000000000000
+      internalID: -7870276711496609559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_1
+      name: PlayerRun_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 504
-        width: 128
-        height: 126
+        x: 216
+        y: 5
+        width: 42
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d4bc77219f9c45aabb3b2b0b084b352
-      internalID: 21300002
+      spriteID: b3d3fc6a0a5adf710800000000000000
+      internalID: 1728719941392088379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_2
+      name: PlayerRun_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 504
-        width: 128
-        height: 126
+        x: 375
+        y: 5
+        width: 44
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 05d5e315b3c6e4fa38ac35342483ab67
-      internalID: 21300004
+      spriteID: 9dc2e45501a3b7c40800000000000000
+      internalID: 5511062410843008217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_3
+      name: PlayerRun_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 504
-        width: 128
-        height: 126
+        x: 536
+        y: 14
+        width: 44
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2c8241695f8d346b48019075e5bbd117
-      internalID: 21300006
+      spriteID: fe700f562c8cac210800000000000000
+      internalID: 1354115375237695471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_4
+      name: PlayerRun_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 504
-        width: 128
-        height: 126
+        x: 691
+        y: 5
+        width: 47
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2eeed219953714de8b1eb5bd18058975
-      internalID: 21300008
+      spriteID: 2567cd26bf70c31c0800000000000000
+      internalID: -4522731149510019502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_5
+      name: PlayerRun_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 504
-        width: 128
-        height: 126
+        x: 855
+        y: 5
+        width: 43
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a0ac83442e72f45219c5b7bca4e91cc3
-      internalID: 21300010
+      spriteID: 6119ba3966c5fb9c0800000000000000
+      internalID: -3909304355900387050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_6
+      name: PlayerRun_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 378
-        width: 128
-        height: 126
+        x: 1015
+        y: 5
+        width: 43
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 74efca5ba1c82405d848e3c55607524b
-      internalID: 21300012
+      spriteID: b12c3487dc33a00c0800000000000000
+      internalID: -4608814311081262565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_run_7
+      name: PlayerRun_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 378
-        width: 128
-        height: 126
+        x: 1176
+        y: 11
+        width: 42
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 85d42e67e3a5b4ba8b83246db3878606
-      internalID: 21300014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 378
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 282fc6acd92b3448794283f36f9ebee5
-      internalID: 21300016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_9
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 378
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f72cc7c16bd647288902c8c250edb1e
-      internalID: 21300018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_10
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 378
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64feab14522a9415cab774616fa740e6
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_11
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 378
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b97eb8ac25ff431c9538cde784dca4c
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dc53c7dc3b9e4371b70b07ef2793121
-      internalID: 21300024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_13
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b346d64e2ed914c2486ae5f43c1f19f1
-      internalID: 21300026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_14
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d14bef02420c426c87e4bbb80efa338
-      internalID: 21300028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_15
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57ec161f4e02a4e079e73c31c340bc69
-      internalID: 21300030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_16
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f5737caf67a44dcb839074b0c3188f5
-      internalID: 21300032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_17
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 252
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9ab731b9fbc040e6afb712a94890ba3
-      internalID: 21300034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c42fc233fb43749d399f557acca3242c
-      internalID: 21300036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_19
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4124464b66b5b4ceb81ad0e9c6b57f47
-      internalID: 21300038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_20
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3a8c463863f747b89582bb6add314e2
-      internalID: 21300040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_21
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5f3faa117c8345a8b2f79ce60fc1c8d
-      internalID: 21300042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_22
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20e29e49562f14d5a9f4ee509e6b5120
-      internalID: 21300044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_23
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 126
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 469f80ef882c248dcb3c26c80537c32e
-      internalID: 21300046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56e44b03a9831474badcf5f5d18356cf
-      internalID: 21300048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_25
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3656c077d53814433ba543194ed72507
-      internalID: 21300050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_26
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b010ab404cff04472844e7902e544ec3
-      internalID: 21300052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_27
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51d59629d715d40a4b01e2aba8228b0a
-      internalID: 21300054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_MC_render_run_28
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c47d5e7f55214bb39456db2f5061c35
-      internalID: 21300056
+      spriteID: ab1a27feeef11ce10800000000000000
+      internalID: 2216087602722939322
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
-    spriteID: 5f15eb5ece9ed4536950ee05ce2dc0ea
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      Unity_MC_render_run_22: 21300044
-      Unity_MC_render_run_10: 21300020
-      Unity_MC_render_run_14: 21300028
-      Unity_MC_render_run_6: 21300012
-      Unity_MC_render_run_4: 21300008
-      Unity_MC_render_run_20: 21300040
-      Unity_MC_render_run_13: 21300026
-      Unity_MC_render_run_16: 21300032
-      Unity_MC_render_run_19: 21300038
-      Unity_MC_render_run_17: 21300034
-      Unity_MC_render_run_12: 21300024
-      Unity_MC_render_run_23: 21300046
-      Unity_MC_render_run_27: 21300054
-      Unity_MC_render_run_18: 21300036
-      Unity_MC_render_run_24: 21300048
-      Unity_MC_render_run_25: 21300050
-      Unity_MC_render_run_26: 21300052
-      Unity_MC_render_run_9: 21300018
-      Unity_MC_render_run_21: 21300042
-      Unity_MC_render_run_15: 21300030
-      Unity_MC_render_run_8: 21300016
-      Unity_MC_render_run_5: 21300010
-      Unity_MC_render_run_1: 21300002
-      Unity_MC_render_run_3: 21300006
-      Unity_MC_render_run_7: 21300014
-      Unity_MC_render_run_11: 21300022
-      Unity_MC_render_run_28: 21300056
-      Unity_MC_render_run_0: 21300000
-      Unity_MC_render_run_2: 21300004
-  spritePackingTag: 
+      PlayerRun_0: -7870276711496609559
+      PlayerRun_1: 1728719941392088379
+      PlayerRun_2: 5511062410843008217
+      PlayerRun_3: 1354115375237695471
+      PlayerRun_4: -4522731149510019502
+      PlayerRun_5: -3909304355900387050
+      PlayerRun_6: -4608814311081262565
+      PlayerRun_7: 2216087602722939322
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
