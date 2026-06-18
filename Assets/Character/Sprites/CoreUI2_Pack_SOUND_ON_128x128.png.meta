@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 46e9aadaeacf550418c2a71486dbb01a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3796746896525834255
+    second: CoreUI2_Pack_SOUND_ON_128x128_0
+  - first:
+      213: 8829352135442593932
+    second: CoreUI2_Pack_SOUND_ON_128x128_1
+  - first:
+      213: 3628667618998767085
+    second: CoreUI2_Pack_SOUND_ON_128x128_2
+  - first:
+      213: -7296257145205405735
+    second: CoreUI2_Pack_SOUND_ON_128x128_3
+  - first:
+      213: 3125918219055791512
+    second: CoreUI2_Pack_SOUND_ON_128x128_4
+  - first:
+      213: 1562125703275377897
+    second: CoreUI2_Pack_SOUND_ON_128x128_5
+  - first:
+      213: -7611687923562024684
+    second: CoreUI2_Pack_SOUND_ON_128x128_6
+  - first:
+      213: 4281774910628687201
+    second: CoreUI2_Pack_SOUND_ON_128x128_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 160
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7c28a40de3f4bc0800000000000000
+      internalID: -3796746896525834255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 160
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8874edbcf8288a70800000000000000
+      internalID: 8829352135442593932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 160
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded426659fd9b5230800000000000000
+      internalID: 3628667618998767085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 160
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7402e98cc7eba90800000000000000
+      internalID: -7296257145205405735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 32
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89dfdb3fe0e716b20800000000000000
+      internalID: 3125918219055791512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 32
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e47c36fc09cda510800000000000000
+      internalID: 1562125703275377897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 32
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41174f6792add5690800000000000000
+      internalID: -7611687923562024684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoreUI2_Pack_SOUND_ON_128x128_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 32
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16de33c689beb6b30800000000000000
+      internalID: 4281774910628687201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CoreUI2_Pack_SOUND_ON_128x128_0: -3796746896525834255
+      CoreUI2_Pack_SOUND_ON_128x128_1: 8829352135442593932
+      CoreUI2_Pack_SOUND_ON_128x128_2: 3628667618998767085
+      CoreUI2_Pack_SOUND_ON_128x128_3: -7296257145205405735
+      CoreUI2_Pack_SOUND_ON_128x128_4: 3125918219055791512
+      CoreUI2_Pack_SOUND_ON_128x128_5: 1562125703275377897
+      CoreUI2_Pack_SOUND_ON_128x128_6: -7611687923562024684
+      CoreUI2_Pack_SOUND_ON_128x128_7: 4281774910628687201
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

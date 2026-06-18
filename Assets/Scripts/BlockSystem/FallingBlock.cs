@@ -98,7 +98,7 @@ public class FallingBlock : MonoBehaviour
 
     void OnPlayerHit(GameObject player)
     {
-        Debug.Log($"Block touched player: {player.name}");
+        //Debug.Log($"Block touched player: {player.name}");
         
         // Наносим урон игроку если блок падает (не приземлился)
         if (!hasLanded)
