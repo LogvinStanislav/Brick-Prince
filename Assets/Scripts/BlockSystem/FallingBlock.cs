@@ -79,8 +79,29 @@ public class FallingBlock : MonoBehaviour
         rb.linearVelocity = velocity;
     }
 
+    public void DestroyByGolem()
+    {
+        if (hasLanded)
+        {
+            PlayDestroySound();
+            ShatterSprite();
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
+
+
+        if (collision.gameObject.CompareTag("Golem"))
+        {
+            Debug.Log($"Block touch");
+            if (!hasLanded)
+            {
+                LandBlock();
+            }
+            return;
+        }
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             OnEnemyHit(collision.gameObject);
@@ -111,7 +132,6 @@ public class FallingBlock : MonoBehaviour
 
     void OnEnemyHit(GameObject enemy)
     {
-        Debug.Log($"Block hit enemy: {enemy.name}");
         if (!hasLanded)
         {
             Schedule<EnemyDeath>().enemy = enemy.GetComponent<EnemyController>();
@@ -128,7 +148,6 @@ public class FallingBlock : MonoBehaviour
 
     void OnPlayerHit(GameObject player)
     {
-        Debug.Log($"Block touched player: {player.name}");
 
         if (!hasLanded)
         {
@@ -142,7 +161,7 @@ public class FallingBlock : MonoBehaviour
 
         hasLanded = true;
         rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Static;
+        rb.bodyType = RigidbodyType2D.Dynamic;
 
         spawner.OnBlockLanded();
 

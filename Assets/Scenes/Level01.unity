@@ -5434,7 +5434,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9440436, y: -0.088298894, z: -29}
+  m_LocalPosition: {x: 3.8644738, y: -0.08868105, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96855,10 +96855,12 @@ MonoBehaviour:
   fallSpeed: 1
   moveSpeed: 5
   spawnHeightAbovePlayer: 7.225
+  destroySound: {fileID: 8300000, guid: d2cc290f689651a40bf77fe75006732b, type: 3}
   spawnKey: 113
   moveLeftKey: 276
   moveRightKey: 275
   fastFallKey: 274
+  rotateKey: 273
 --- !u!114 &2107848311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96872,8 +96874,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   blocks:
-  - id: basic
-    prefab: {fileID: 6161709274068591367, guid: 955bc6cd3fbb18b419aff548babe3e70,
+  - id: zi-block
+    prefab: {fileID: 962503953802101507, guid: 48b04a1223e45704abfacf362a110910, type: 3}
+    spawnWeight: 1
+  - id: zir-block
+    prefab: {fileID: 6485209424428544356, guid: e1ce5550d5532ba43b2543fc20102f97,
+      type: 3}
+    spawnWeight: 1
+  - id: L-block
+    prefab: {fileID: 8626328761737857028, guid: 83c3c01ecedf3f547bf3086e0e5bf1e9,
+      type: 3}
+    spawnWeight: 1
+  - id: Lr-block
+    prefab: {fileID: 1266276216143064545, guid: 6e0ad0e6d77c36942a12e71f74186ef8,
+      type: 3}
+    spawnWeight: 1
+  - id: T-block
+    prefab: {fileID: 90141173506109337, guid: d7d8d35bc61a9e54bb931a653f44bb10, type: 3}
+    spawnWeight: 1
+  - id: I-block
+    prefab: {fileID: 1083828051743791496, guid: b74d5ca4e323f97408e9d56bf4acccfd,
+      type: 3}
+    spawnWeight: 1
+  - id: Cube-block
+    prefab: {fileID: 8398203313275010724, guid: a7e5c30dec3b4fe48a70c467062929ee,
       type: 3}
     spawnWeight: 1
 --- !u!4 &2107848312
