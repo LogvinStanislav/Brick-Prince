@@ -63,13 +63,8 @@ namespace Platformer.Mechanics
 
         protected override void Update()
         {
-
-            UnityEngine.Event currentEvent = UnityEngine.Event.current;
-
-            
             if (controlEnabled)
             {
-                
                 move.x = m_MoveAction.ReadValue<Vector2>().x;
                 if (jumpState == JumpState.Grounded && m_JumpAction.WasPressedThisFrame())
                     jumpState = JumpState.PrepareToJump;

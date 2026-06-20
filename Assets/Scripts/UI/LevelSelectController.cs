@@ -16,7 +16,7 @@ namespace Platformer.UI
         [SerializeField] private List<LevelInfo> levels = new List<LevelInfo>
         {
             new LevelInfo { displayName = "Level 1", sceneName = "Level01", isAvailable = true },
-            new LevelInfo { displayName = "Level 2", sceneName = "Level02", isAvailable = false },
+            new LevelInfo { displayName = "Level 2", sceneName = "Level02", isAvailable = true },
             new LevelInfo { displayName = "Level 3", sceneName = "Level03", isAvailable = false },
             new LevelInfo { displayName = "Level 4", sceneName = "Level04", isAvailable = false },
             new LevelInfo { displayName = "Level 5", sceneName = "Level05", isAvailable = false },

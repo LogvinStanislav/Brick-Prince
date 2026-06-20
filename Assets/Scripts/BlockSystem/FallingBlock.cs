@@ -1,6 +1,7 @@
-using UnityEngine;
-using Platformer.Gameplay;
 using Platformer.Core;
+using Platformer.Gameplay;
+using Platformer.Mechanics;
+using UnityEngine;
 using static Platformer.Core.Simulation;
 
 public class FallingBlock : MonoBehaviour
@@ -79,26 +80,51 @@ public class FallingBlock : MonoBehaviour
         }
     }
 
+    public GameObject destroyEffectPrefab; // префаб с анимацией/частицами и звуком
+    public AudioClip destroySound;
+
     void OnEnemyHit(GameObject enemy)
     {
-        Debug.Log($"Block hit enemy: {enemy.name}");
-        
-        // Уничтожаем врага
-        Destroy(enemy);
-        
-        // Уничтожаем блок
-        Destroy(gameObject);
-        
-        // Уведомляем spawner что блок больше не активен
-        if (spawner != null)
+        //Debug.Log($"Block hit enemy: {enemy.name}");
+        if (!hasLanded)
         {
-            spawner.OnBlockLanded();
+            // Уничтожаем врага
+            // Destroy(enemy);
+            Schedule<EnemyDeath>().enemy = enemy.GetComponent<EnemyController>();
+
+            // Уничтожаем блок
+            Vector3 destroyPosition = transform.position;
+            if (destroyEffectPrefab != null)
+            {
+                GameObject effect = Instantiate(destroyEffectPrefab, destroyPosition, Quaternion.identity);
+                Destroy(effect, 2f); // удаляем через 2 секунды, когда анимация закончится
+            }
+
+            // Проигрываем звук на месте (если он не привязан к эффекту)
+            if (destroySound != null)
+            {
+                GameObject tempAudio = new GameObject("TempAudio");
+                tempAudio.transform.position = destroyPosition;
+                AudioSource audioSource = tempAudio.AddComponent<AudioSource>();
+                audioSource.clip = destroySound;
+                audioSource.spatialBlend = 0f; // 0 = 2D звук, не зависит от расстояния
+                audioSource.volume = 1f;
+                audioSource.Play();
+                Destroy(tempAudio, destroySound.length);
+            }
+            Destroy(gameObject);
+
+            // Уведомляем spawner что блок больше не активен
+            if (spawner != null)
+            {
+                spawner.OnBlockLanded();
+            }
         }
     }
 
     void OnPlayerHit(GameObject player)
     {
-        //Debug.Log($"Block touched player: {player.name}");
+        Debug.Log($"Block touched player: {player.name}");
         
         // Наносим урон игроку если блок падает (не приземлился)
         if (!hasLanded)

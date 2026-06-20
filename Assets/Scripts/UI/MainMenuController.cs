@@ -20,9 +20,25 @@ namespace Platformer.UI
         [Tooltip("Сцена, которая загрузится по кнопке Play (обычно первый уровень)")]
         [SerializeField] private string firstLevelSceneName = "Level01";
 
+        /// <summary>
+        /// Если true, при следующей загрузке сцены MainMenu сразу откроется
+        /// панель выбора уровня, а не главный экран. Используется для
+        /// возврата сюда после победы на уровне. Флаг статический, чтобы
+        /// пережить смену сцены, и сбрасывается сразу после использования.
+        /// </summary>
+        public static bool OpenLevelSelectOnNextLoad = false;
+
         void Start()
         {
-            ShowMainPanel();
+            if (OpenLevelSelectOnNextLoad)
+            {
+                OpenLevelSelectOnNextLoad = false;
+                ShowLevelSelectPanel();
+            }
+            else
+            {
+                ShowMainPanel();
+            }
         }
 
         public void ShowMainPanel()
