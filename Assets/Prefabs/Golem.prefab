@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804f3f8f96fafe848903a21ae154a3d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GolemController
-  patrolSpeed: 0.5
+  patrolSpeed: 0.25
   path: {fileID: 0}
   topTolerance: 0.1
 --- !u!95 &2941851910840931977
