@@ -10,7 +10,6 @@ public class BlockSpawner : MonoBehaviour
     [SerializeField] private float fallSpeed = 3f;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float spawnHeightAbovePlayer = 8f;
-    public GameObject destroyEffectPrefab; // префаб с анимацией/частицами и звуком
     public AudioClip destroySound;
 
     [Header("Controls")]
@@ -18,6 +17,9 @@ public class BlockSpawner : MonoBehaviour
     [SerializeField] private KeyCode moveLeftKey = KeyCode.LeftArrow;
     [SerializeField] private KeyCode moveRightKey = KeyCode.RightArrow;
     [SerializeField] private KeyCode fastFallKey = KeyCode.DownArrow;
+    [SerializeField] private KeyCode rotateKey = KeyCode.UpArrow;
+
+
 
     private FallingBlock currentBlock;
     private bool hasActiveBlock = false;
@@ -42,15 +44,20 @@ public class BlockSpawner : MonoBehaviour
         if (hasActiveBlock && currentBlock != null)
         {
             float horizontal = 0f;
-            
+
             if (Input.GetKey(moveLeftKey))
                 horizontal = -1f;
             else if (Input.GetKey(moveRightKey))
                 horizontal = 1f;
-            
+
             bool fastFall = Input.GetKey(fastFallKey);
-            
+
             currentBlock.UpdateMovement(horizontal, fastFall);
+
+            if (Input.GetKeyDown(rotateKey))
+            {
+                currentBlock.Rotate90();
+            }
         }
     }
 
@@ -78,7 +85,6 @@ public class BlockSpawner : MonoBehaviour
             currentBlock = blockObj.AddComponent<FallingBlock>();
         }
 
-        currentBlock.destroyEffectPrefab = destroyEffectPrefab;
         currentBlock.destroySound = destroySound;
 
         currentBlock.Initialize(this, fallSpeed, moveSpeed);
