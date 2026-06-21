@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.29, y: -0.09, z: 0}
-  m_LocalScale: {x: 0.5, y: 1, z: 1}
+  m_LocalScale: {x: 1.6957, y: 1.6957, z: 1.6957}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+  m_Sprite: {fileID: 3743957659742367504, guid: f5b1dd9180f52da45a5c26b09c935669,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -158,17 +158,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06284923, y: -0.08256656}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.67}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.3813666, y: 0.49967122}
   m_EdgeRadius: 0
 --- !u!95 &5076216238516644692
 Animator:
@@ -180,7 +180,7 @@ Animator:
   m_GameObject: {fileID: 367578295563278581}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e79c8cc8e8c08e34bbe9b36b8f06fb89, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platformer.Mechanics.EnemyController
   path: {fileID: 0}
-  ouch: {fileID: 0}
+  ouch: {fileID: 8300000, guid: fcd342b1ee8b4c04d9f917c0430b68f1, type: 3}
 --- !u!114 &3048781916449490143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e07b0d723ee8a74284800542e635f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MageController
-  facingRight: 1
+  facingRight: 0
   fireballPrefab: {fileID: 8259576145292014426, guid: 6aa80fb4ff3a7f341ac405e99cf02259,
     type: 3}
   spawnDistance: 0.5

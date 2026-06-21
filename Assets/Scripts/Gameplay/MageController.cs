@@ -14,10 +14,12 @@ public class MageController : MonoBehaviour
 
     private float fireTimer;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         UpdateFacing();
         fireTimer = fireRate;
     }
@@ -35,6 +37,11 @@ public class MageController : MonoBehaviour
     void Shoot()
     {
         if (fireballPrefab == null) return;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("attack");
+        }
 
         float direction = facingRight ? 1f : -1f;
         Vector3 spawnPos = transform.position + new Vector3(direction * spawnDistance, 0f, 0f);

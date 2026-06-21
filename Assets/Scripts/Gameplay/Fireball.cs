@@ -15,11 +15,13 @@ public class Fireball : MonoBehaviour
     [SerializeField] private AudioClip explosionSound;
 
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private bool hasExploded = false;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
@@ -38,6 +40,11 @@ public class Fireball : MonoBehaviour
     public void Launch(float velocityX)
     {
         rb.linearVelocity = new Vector2(velocityX, 0f);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = velocityX < 0f;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
