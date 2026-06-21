@@ -29673,6 +29673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8464235835490670375, guid: e373fdc088ec7204eaf75d0be29428f7,
         type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464235835490670375, guid: e373fdc088ec7204eaf75d0be29428f7,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.28293157
       objectReference: {fileID: 0}
