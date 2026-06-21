@@ -29673,6 +29673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8464235835490670375, guid: e373fdc088ec7204eaf75d0be29428f7,
         type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464235835490670375, guid: e373fdc088ec7204eaf75d0be29428f7,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.28293157
       objectReference: {fileID: 0}
@@ -29757,7 +29762,7 @@ MonoBehaviour:
   fallSpeed: 1
   moveSpeed: 5
   spawnHeightAbovePlayer: 7.225
-  destroySound: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: d2cc290f689651a40bf77fe75006732b, type: 3}
   spawnKey: 113
   moveLeftKey: 276
   moveRightKey: 275

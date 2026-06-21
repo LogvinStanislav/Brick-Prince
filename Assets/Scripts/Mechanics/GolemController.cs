@@ -1,6 +1,7 @@
 using Platformer.Core;
 using Platformer.Gameplay;
 using Platformer.Mechanics;
+using System;
 using UnityEngine;
 using static Platformer.Core.Simulation;
 
@@ -43,7 +44,7 @@ public class GolemController : MonoBehaviour
     void FixedUpdate()
     {
         MovePlayerWithGolem();
-        previousPosition = transform.position; // ÎÁßÇÀÒÅËÜÍÎ â êîíöå FixedUpdate
+        previousPosition = transform.position;
     }
 
     void MovePlayerWithGolem()
@@ -81,7 +82,7 @@ public class GolemController : MonoBehaviour
         Collider2D playerCollider = collision.collider;
         if (playerCollider == null || golemCollider == null) return;
 
-        bool isOnTop = playerCollider.bounds.center.y >= golemCollider.bounds.max.y - topTolerance;
+        bool isOnTop = playerCollider.bounds.min.y >= golemCollider.bounds.max.y - topTolerance;
 
         if (!isOnTop)
         {
@@ -99,6 +100,15 @@ public class GolemController : MonoBehaviour
         if (!collision.gameObject.CompareTag("Block")) return;
 
         FallingBlock block = collision.gameObject.GetComponent<FallingBlock>();
+        if (block != null)
+        {
+            block.DestroyByGolem();
+        }
+    }
+
+    public void OnBlockDetected(GameObject blockObject)
+    {
+        FallingBlock block = blockObject.GetComponentInParent<FallingBlock>();
         if (block != null)
         {
             block.DestroyByGolem();

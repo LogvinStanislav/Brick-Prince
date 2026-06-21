@@ -36,7 +36,7 @@ public class FallingBlock : MonoBehaviour
         isRotating = true;
 
         float startAngle = transform.eulerAngles.z;
-        float targetAngle = startAngle - 90f; // по часовой стрелке
+        float targetAngle = startAngle - 90f;
         float elapsed = 0f;
 
         while (elapsed < rotationDuration)
@@ -161,7 +161,7 @@ public class FallingBlock : MonoBehaviour
 
         hasLanded = true;
         rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.bodyType = RigidbodyType2D.Kinematic;
 
         spawner.OnBlockLanded();
 
@@ -202,7 +202,6 @@ public class FallingBlock : MonoBehaviour
         float pieceHeight = spriteRect.height / shatterRows / 5;
         float pixelsPerUnit = originalSprite.sprite.pixelsPerUnit;
 
-        // Размер всего спрайта в мировых единицах
         Vector2 fullSize = originalSprite.bounds.size;
         Vector3 originalScale = transform.localScale;
 
@@ -224,7 +223,6 @@ public class FallingBlock : MonoBehaviour
                     pixelsPerUnit
                 );
 
-                // Смещение куска относительно центра исходного блока
                 float offsetX = (x - (shatterCols - 1) / 2f) * (fullSize.x / shatterCols);
                 float offsetY = (y - (shatterRows - 1) / 2f) * (fullSize.y / shatterRows);
                 Vector3 piecePos = transform.position + new Vector3(offsetX, offsetY, 0);

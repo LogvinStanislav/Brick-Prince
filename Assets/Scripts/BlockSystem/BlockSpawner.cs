@@ -34,13 +34,11 @@ public class BlockSpawner : MonoBehaviour
 
     void Update()
     {
-        // Спавн нового блока
         if (Input.GetKeyDown(spawnKey) && !hasActiveBlock)
         {
             SpawnBlock();
         }
 
-        // Управление текущим блоком
         if (hasActiveBlock && currentBlock != null)
         {
             float horizontal = 0f;
