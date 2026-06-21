@@ -160,9 +160,22 @@ namespace Platformer.Mechanics
                     }
                     else
                     {
-                        //We are airborne, but hit something, so cancel vertical up and horizontal velocity.
-                        velocity.x *= 0;
-                        velocity.y = Mathf.Min(velocity.y, 0);
+                        // We are airborne and hit something that isn't ground.
+                        // Differentiate between a wall (mostly horizontal normal)
+                        // and a ceiling (normal pointing downward) so that bumping
+                        // into a wall mid-jump doesn't kill vertical velocity, and
+                        // hitting a ceiling doesn't kill horizontal velocity.
+                        bool isCeiling = currentNormal.y < -0.1f;
+                        bool isWall = Mathf.Abs(currentNormal.x) > 0.1f && !isCeiling;
+
+                        if (isCeiling)
+                        {
+                            velocity.y = Mathf.Min(velocity.y, 0);
+                        }
+                        if (isWall)
+                        {
+                            velocity.x = 0;
+                        }
                     }
                     //remove shellDistance from actual move distance.
                     var modifiedDistance = hitBuffer[i].distance - shellRadius;
