@@ -90,11 +90,9 @@ public class FallingBlock : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
-
+        if (collision.gameObject.CompareTag("Fireball")) return;
         if (collision.gameObject.CompareTag("Golem"))
         {
-            Debug.Log($"Block touch");
             if (!hasLanded)
             {
                 LandBlock();
@@ -134,7 +132,15 @@ public class FallingBlock : MonoBehaviour
     {
         if (!hasLanded)
         {
-            Schedule<EnemyDeath>().enemy = enemy.GetComponent<EnemyController>();
+            EnemyHealth health = enemy.GetComponent<EnemyHealth>();
+            if (health != null && health.health > 1)
+            {
+                health.health--;
+            }
+            else
+            {
+                Schedule<EnemyDeath>().enemy = enemy.GetComponent<EnemyController>();
+            }
 
             PlayDestroySound();
             ShatterSprite();

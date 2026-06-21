@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Golem
   - Block
+  - Fireball
   layers:
   - Default
   - TransparentFX
