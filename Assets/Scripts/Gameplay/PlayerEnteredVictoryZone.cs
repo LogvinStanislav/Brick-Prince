@@ -20,7 +20,11 @@ namespace Platformer.Gameplay
         {
             model.player.animator.SetTrigger("victory");
             model.player.controlEnabled = false;
-            LevelCompleteLoader.LoadMainMenuAfterDelay(1.5f);
+
+            if (GameResultUI.Instance != null)
+                GameResultUI.Instance.ShowVictory();
+            else
+                LevelCompleteLoader.LoadMainMenuAfterDelay(1.5f);
         }
     }
 }

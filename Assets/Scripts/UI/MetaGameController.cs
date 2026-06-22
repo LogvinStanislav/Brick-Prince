@@ -66,6 +66,9 @@ namespace Platformer.UI
 
         void Update()
         {
+
+            if (GameResultUI.IsShowingResult) return;
+
             if (m_MenuAction.WasPressedThisFrame())
             {
                 ToggleMainMenu(show: !showMainCanvas);
