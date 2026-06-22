@@ -27,10 +27,6 @@ namespace Platformer.UI
         {
             Instance = this;
             IsShowingResult = false;
-
-            // Убеждаемся что оба экрана выключены при старте
-            if (victoryScreen != null) victoryScreen.SetActive(false);
-            if (defeatScreen != null) defeatScreen.SetActive(false);
         }
 
         public void ShowVictory(int coins = 0)
@@ -39,7 +35,7 @@ namespace Platformer.UI
             Time.timeScale = 0f;
 
             if (victoryCoinsText != null)
-                victoryCoinsText.text = $"Coins: {coins}";
+                victoryCoinsText.text = $"Coins: +{coins}";
 
             if (victoryScreen != null)
                 victoryScreen.SetActive(true);
@@ -51,7 +47,7 @@ namespace Platformer.UI
             Time.timeScale = 0f;
 
             if (defeatCoinsText != null)
-                defeatCoinsText.text = $"Coins: {coins}";
+                defeatCoinsText.text = $"Coins: -{coins}";
 
             if (defeatScreen != null)
                 defeatScreen.SetActive(true);
