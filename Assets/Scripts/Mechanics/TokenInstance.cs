@@ -11,6 +11,7 @@ namespace Platformer.Mechanics
     /// TokenController in the scene.
     /// </summary>
     [RequireComponent(typeof(Collider2D))]
+
     public class TokenInstance : MonoBehaviour
     {
         public AudioClip tokenCollectAudio;
@@ -29,6 +30,9 @@ namespace Platformer.Mechanics
         //active frame in animation, updated by the controller.
         internal int frame = 0;
         internal bool collected = false;
+
+        [SerializeField] public GameObject GameController;
+        [SerializeField] public Transform tokensParent;
 
         void Awake()
         {
@@ -53,6 +57,16 @@ namespace Platformer.Mechanics
             sprites = collectedAnimation;
             if (controller != null)
                 collected = true;
+
+            if (GameController != null)
+            {
+                if(!GameController.TryGetComponent<TokensCounter>(out _))
+                {
+                    GameController.AddComponent<TokensCounter>();
+                    GameController.GetComponent<TokensCounter>().tokens_number = tokensParent.childCount;
+                }
+                GameController.GetComponent<TokensCounter>().tokens_collected++;
+            }
             //send an event into the gameplay system to perform some behaviour.
             var ev = Schedule<PlayerTokenCollision>();
             ev.token = this;

@@ -1636,7 +1636,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.103, y: 0.481, z: -29}
+  m_LocalPosition: {x: 6.9218984, y: 0.50894105, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29205,6 +29205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889797501}
   - component: {fileID: 1889797502}
+  - component: {fileID: 1889797503}
   m_Layer: 0
   m_Name: Tokens
   m_TagString: Untagged
@@ -29239,6 +29240,20 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_SortAtRoot: 0
+--- !u!114 &1889797503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889797500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7d9d8a972f1494293fb1cab0fa23d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TokensInitializer
+  tokensParent: {fileID: 1889797501}
+  gameController: {fileID: 1754240606}
 --- !u!1 &1946717923
 GameObject:
   m_ObjectHideFlags: 0
