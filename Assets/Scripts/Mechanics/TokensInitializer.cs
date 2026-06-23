@@ -9,6 +9,14 @@ public class TokensInitializer : MonoBehaviour
 
     void Awake()
     {
+
+
+
+        if (!gameController.TryGetComponent<TokensCounter>(out _))
+        {
+            gameController.AddComponent<TokensCounter>();
+            gameController.GetComponent<TokensCounter>().tokens_number = tokensParent.childCount;
+        }
         foreach (Transform child in transform)
         {
             TokenInstance token = child.GetComponent<TokenInstance>();

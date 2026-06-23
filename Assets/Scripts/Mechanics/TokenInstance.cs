@@ -60,11 +60,6 @@ namespace Platformer.Mechanics
 
             if (GameController != null)
             {
-                if(!GameController.TryGetComponent<TokensCounter>(out _))
-                {
-                    GameController.AddComponent<TokensCounter>();
-                    GameController.GetComponent<TokensCounter>().tokens_number = tokensParent.childCount;
-                }
                 GameController.GetComponent<TokensCounter>().tokens_collected++;
             }
             //send an event into the gameplay system to perform some behaviour.
