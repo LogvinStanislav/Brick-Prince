@@ -3492,6 +3492,7 @@ MonoBehaviour:
   defeatScreen: {fileID: 1760260337}
   victoryCoinsText: {fileID: 1944618352}
   defeatCoinsText: {fileID: 2130995999}
+  GameController: {fileID: 1754240606}
 --- !u!4 &233397636
 Transform:
   m_ObjectHideFlags: 0
@@ -6330,7 +6331,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.97931, y: -0.2918653, z: -29}
+  m_LocalPosition: {x: 0.011908358, y: -0.3112111, z: -29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88261,7 +88262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1595884397
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93897,7 +93898,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 263.036, y: 35.6735}
+  m_SizeDelta: {x: 559.1577, y: 47.2861}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1944618351
 CanvasRenderer:

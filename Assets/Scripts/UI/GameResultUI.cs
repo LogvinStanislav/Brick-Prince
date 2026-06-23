@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,7 @@ namespace Platformer.UI
         [Header("Текст монет (опционально)")]
         [SerializeField] private TextMeshProUGUI victoryCoinsText;
         [SerializeField] private TextMeshProUGUI defeatCoinsText;
+        [SerializeField] private GameObject GameController;
 
         public static bool IsShowingResult { get; private set; }
 
@@ -29,25 +31,26 @@ namespace Platformer.UI
             IsShowingResult = false;
         }
 
-        public void ShowVictory(int coins = 0)
+        public void ShowVictory()
         {
             IsShowingResult = true;
             Time.timeScale = 0f;
 
+
             if (victoryCoinsText != null)
-                victoryCoinsText.text = $"Coins: +{coins}";
+                victoryCoinsText.text = $"Coins: + {GameController.GetComponent<TokensCounter>().tokens_collected} / {GameController.GetComponent<TokensCounter>().tokens_number}";
 
             if (victoryScreen != null)
                 victoryScreen.SetActive(true);
         }
 
-        public void ShowDefeat(int coins = 0)
+        public void ShowDefeat()
         {
             IsShowingResult = true;
             Time.timeScale = 0f;
 
             if (defeatCoinsText != null)
-                defeatCoinsText.text = $"Coins: -{coins}";
+                defeatCoinsText.text = $"Coins: - {GameController.GetComponent<TokensCounter>().tokens_collected}";
 
             if (defeatScreen != null)
                 defeatScreen.SetActive(true);
