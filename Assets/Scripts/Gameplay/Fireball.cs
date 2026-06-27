@@ -72,7 +72,6 @@ public class Fireball : MonoBehaviour
             Explode();
             return;
         }
-
         if (!hitObject.CompareTag("Enemy") && !hitObject.CompareTag("Fireball"))
         {
             Explode();
