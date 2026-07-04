@@ -95,7 +95,6 @@ public class BlockSpawner : MonoBehaviour
         currentBlock = null;
     }
 
-    // Методы для настройки параметров (для будущих артефактов)
     public void SetFallSpeed(float speed) => fallSpeed = speed;
     public void SetMoveSpeed(float speed) => moveSpeed = speed;
 }

@@ -5,11 +5,7 @@ using static Platformer.Core.Simulation;
 
 namespace Platformer.Mechanics
 {
-    /// <summary>
-    /// This class contains the data required for implementing token collection mechanics.
-    /// It does not perform animation of the token, this is handled in a batch by the 
-    /// TokenController in the scene.
-    /// </summary>
+
     [RequireComponent(typeof(Collider2D))]
 
     public class TokenInstance : MonoBehaviour
@@ -24,10 +20,8 @@ namespace Platformer.Mechanics
 
         internal SpriteRenderer _renderer;
 
-        //unique index which is assigned by the TokenController in a scene.
         internal int tokenIndex = -1;
         internal TokenController controller;
-        //active frame in animation, updated by the controller.
         internal int frame = 0;
         internal bool collected = false;
 
@@ -44,7 +38,6 @@ namespace Platformer.Mechanics
 
         void OnTriggerEnter2D(Collider2D other)
         {
-            //only exectue OnPlayerEnter if the player collides with this token.
             var player = other.gameObject.GetComponent<PlayerController>();
             if (player != null) OnPlayerEnter(player);
         }
@@ -52,7 +45,6 @@ namespace Platformer.Mechanics
         void OnPlayerEnter(PlayerController player)
         {
             if (collected) return;
-            //disable the gameObject and remove it from the controller update list.
             frame = 0;
             sprites = collectedAnimation;
             if (controller != null)
@@ -62,7 +54,6 @@ namespace Platformer.Mechanics
             {
                 GameController.GetComponent<TokensCounter>().tokens_collected++;
             }
-            //send an event into the gameplay system to perform some behaviour.
             var ev = Schedule<PlayerTokenCollision>();
             ev.token = this;
             ev.player = player;

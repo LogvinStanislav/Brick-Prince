@@ -4,30 +4,18 @@ using UnityEngine;
 
 namespace Platformer.Mechanics
 {
-    /// <summary>
-    /// Implements game physics for some in game entity.
-    /// </summary>
+
     public class KinematicObject : MonoBehaviour
     {
-        /// <summary>
-        /// The minimum normal (dot product) considered suitable for the entity sit on.
-        /// </summary>
+
         public float minGroundNormalY = .65f;
 
-        /// <summary>
-        /// A custom gravity coefficient applied to this entity.
-        /// </summary>
         public float gravityModifier = 1f;
 
-        /// <summary>
-        /// The current velocity of the entity.
-        /// </summary>
+
         public Vector2 velocity;
 
-        /// <summary>
-        /// Is the entity currently sitting on a surface?
-        /// </summary>
-        /// <value></value>
+
         public bool IsGrounded { get; private set; }
 
         protected Vector2 targetVelocity;
@@ -40,18 +28,13 @@ namespace Platformer.Mechanics
         protected const float shellRadius = 0.01f;
 
 
-        /// <summary>
-        /// Bounce the object's vertical velocity.
-        /// </summary>
-        /// <param name="value"></param>
+
         public void Bounce(float value)
         {
             velocity.y = value;
         }
 
-        /// <summary>
-        /// Bounce the objects velocity in a direction.
-        /// </summary>
+
         /// <param name="dir"></param>
         public void Bounce(Vector2 dir)
         {
@@ -59,9 +42,7 @@ namespace Platformer.Mechanics
             velocity.x = dir.x;
         }
 
-        /// <summary>
-        /// Teleport to some position.
-        /// </summary>
+
         /// <param name="position"></param>
         public void Teleport(Vector3 position)
         {
@@ -101,7 +82,6 @@ namespace Platformer.Mechanics
 
         protected virtual void FixedUpdate()
         {
-            //if already falling, fall faster than the jump speed, otherwise use normal gravity.
             if (velocity.y < 0)
                 velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
             else
@@ -131,17 +111,14 @@ namespace Platformer.Mechanics
 
             if (distance > minMoveDistance)
             {
-                //check if we hit anything in current direction of travel
                 var count = body.Cast(move, contactFilter, hitBuffer, distance + shellRadius);
                 for (var i = 0; i < count; i++)
                 {
                     var currentNormal = hitBuffer[i].normal;
 
-                    //is this surface flat enough to land on?
                     if (currentNormal.y > minGroundNormalY)
                     {
                         IsGrounded = true;
-                        // if moving up, change the groundNormal to new surface normal.
                         if (yMovement)
                         {
                             groundNormal = currentNormal;
@@ -150,21 +127,14 @@ namespace Platformer.Mechanics
                     }
                     if (IsGrounded)
                     {
-                        //how much of our velocity aligns with surface normal?
                         var projection = Vector2.Dot(velocity, currentNormal);
                         if (projection < 0)
                         {
-                            //slower velocity if moving against the normal (up a hill).
                             velocity = velocity - projection * currentNormal;
                         }
                     }
                     else
                     {
-                        // We are airborne and hit something that isn't ground.
-                        // Differentiate between a wall (mostly horizontal normal)
-                        // and a ceiling (normal pointing downward) so that bumping
-                        // into a wall mid-jump doesn't kill vertical velocity, and
-                        // hitting a ceiling doesn't kill horizontal velocity.
                         bool isCeiling = currentNormal.y < -0.1f;
                         bool isWall = Mathf.Abs(currentNormal.x) > 0.1f && !isCeiling;
 
@@ -177,7 +147,6 @@ namespace Platformer.Mechanics
                             velocity.x = 0;
                         }
                     }
-                    //remove shellDistance from actual move distance.
                     var modifiedDistance = hitBuffer[i].distance - shellRadius;
                     distance = modifiedDistance < distance ? modifiedDistance : distance;
                 }

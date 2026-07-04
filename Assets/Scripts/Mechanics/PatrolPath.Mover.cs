@@ -4,9 +4,7 @@ namespace Platformer.Mechanics
 {
     public partial class PatrolPath
     {
-        /// <summary>
-        /// The Mover class oscillates between start and end points of a path at a defined speed.
-        /// </summary>
+
         public class Mover
         {
             PatrolPath path;
@@ -21,10 +19,7 @@ namespace Platformer.Mechanics
                 this.startTime = Time.time;
             }
 
-            /// <summary>
-            /// Get the position of the mover for the current frame.
-            /// </summary>
-            /// <value></value>
+
             public Vector2 Position
             {
                 get

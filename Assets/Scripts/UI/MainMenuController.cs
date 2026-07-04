@@ -2,13 +2,7 @@ using UnityEngine;
 
 namespace Platformer.UI
 {
-    /// <summary>
-    /// Контроллер сцены главного меню. Управляет тем, какая панель
-    /// (Main / LevelSelect / Settings) видна, и обрабатывает кнопки
-    /// верхнего уровня: Play и Quit.
-    /// LevelSelect делегирован отдельному LevelSelectController,
-    /// чтобы этот класс не разрастался при добавлении новых уровней.
-    /// </summary>
+
     public class MainMenuController : MonoBehaviour
     {
         [Header("Панели меню")]
@@ -20,12 +14,7 @@ namespace Platformer.UI
         [Tooltip("Сцена, которая загрузится по кнопке Play (обычно первый уровень)")]
         [SerializeField] private string firstLevelSceneName = "Level01";
 
-        /// <summary>
-        /// Если true, при следующей загрузке сцены MainMenu сразу откроется
-        /// панель выбора уровня, а не главный экран. Используется для
-        /// возврата сюда после победы на уровне. Флаг статический, чтобы
-        /// пережить смену сцены, и сбрасывается сразу после использования.
-        /// </summary>
+
         public static bool OpenLevelSelectOnNextLoad = false;
 
         void Start()

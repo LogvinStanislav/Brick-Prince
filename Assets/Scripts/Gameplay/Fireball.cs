@@ -8,7 +8,7 @@ using static Platformer.Core.Simulation;
 public class Fireball : MonoBehaviour
 {
     [Header("Lifetime")]
-    [SerializeField] private float lifetime = 3f; // врем€ жизни по умолчанию (можно мен€ть в инспекторе префаба)
+    [SerializeField] private float lifetime = 3f; 
 
     [Header("Explosion")]
     [SerializeField] private GameObject explosionEffectPrefab;
@@ -31,7 +31,6 @@ public class Fireball : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    // ѕозвол€ет переопределить врем€ жизни программно (например, из MageController)
     public void SetLifetime(float newLifetime)
     {
         lifetime = newLifetime;

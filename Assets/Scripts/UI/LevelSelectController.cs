@@ -4,12 +4,7 @@ using UnityEngine.UI;
 
 namespace Platformer.UI
 {
-    /// <summary>
-    /// Заполняет экран выбора уровня кнопками на основе списка levels.
-    /// Недоступные уровни (isAvailable == false) показываются как
-    /// заблокированные кнопки — это позволяет держать в списке уровни,
-    /// которые ещё не сделаны, без поломки экрана.
-    /// </summary>
+
     public class LevelSelectController : MonoBehaviour
     {
         [Header("Данные уровней")]
@@ -59,9 +54,7 @@ namespace Platformer.UI
 
                 buttonInstance.interactable = level.isAvailable;
 
-                // Захватываем level в локальную переменную, чтобы замыкание
-                // в AddListener ссылалось на правильный элемент, а не на
-                // последний в списке.
+
                 LevelInfo capturedLevel = level;
                 buttonInstance.onClick.AddListener(() => SceneLoader.Load(capturedLevel.sceneName));
             }

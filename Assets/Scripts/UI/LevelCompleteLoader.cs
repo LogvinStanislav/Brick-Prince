@@ -4,12 +4,7 @@ using System.Collections;
 
 namespace Platformer.UI
 {
-    /// <summary>
-    /// Небольшой статический помощник для отложенной загрузки главного меню
-    /// после победы на уровне. Используется из PlayerEnteredVictoryZone,
-    /// который сам не MonoBehaviour и не может запускать корутины —
-    /// поэтому этот класс создаёт временный служебный GameObject в сцене.
-    /// </summary>
+
     public static class LevelCompleteLoader
     {
         public static void LoadMainMenuAfterDelay(float delaySeconds)

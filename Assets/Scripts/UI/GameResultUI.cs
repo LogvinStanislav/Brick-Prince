@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Platformer.UI
 {
-    /// <summary>
-    /// Управляет экранами победы и поражения.
-    /// Объект должен быть в корне Hierarchy (не внутри выключенного Canvas),
-    /// чтобы Awake() вызвался при старте сцены.
-    /// </summary>
+
     public class GameResultUI : MonoBehaviour
     {
         public static GameResultUI Instance { get; private set; }
@@ -56,7 +52,6 @@ namespace Platformer.UI
                 defeatScreen.SetActive(true);
         }
 
-        // Вызывается кнопкой Continue на обоих экранах
         public void GoToMainMenu()
         {
             IsShowingResult = false;

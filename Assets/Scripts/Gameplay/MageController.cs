@@ -10,7 +10,7 @@ public class MageController : MonoBehaviour
     [SerializeField] private float spawnDistance = 1.5f;
     [SerializeField] private float fireRate = 2f;
     [SerializeField] private float fireballSpeed = 6f;
-    [SerializeField] private float fireballLifetime = 3f; // настраиваемое время жизни шара
+    [SerializeField] private float fireballLifetime = 3f; 
 
     private float fireTimer;
     private SpriteRenderer spriteRenderer;

@@ -30,7 +30,6 @@ public class BlockPool : MonoBehaviour
         return blocks[0].prefab;
     }
 
-    // ========== Методы для будущей системы артефактов ==========
     
     public void AddBlock(BlockData newBlock)
     {

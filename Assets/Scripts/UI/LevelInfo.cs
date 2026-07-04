@@ -2,11 +2,7 @@ using UnityEngine;
 
 namespace Platformer.UI
 {
-    /// <summary>
-    /// Описание одного уровня для экрана выбора уровня.
-    /// sceneName должно точно совпадать с именем .unity файла и быть
-    /// добавлено в Build Settings, иначе загрузка сцены не сработает.
-    /// </summary>
+
     [System.Serializable]
     public class LevelInfo
     {
